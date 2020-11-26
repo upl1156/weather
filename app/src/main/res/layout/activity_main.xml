@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+   <Button
+       android:id="@+id/bt_search"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginEnd="24dp"
+       android:onClick="bt_search_onclick"
+       android:text="search"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.869"
+       app:layout_constraintStart_toEndOf="@+id/et_cn"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintVertical_bias="0.98" />
+
+   <TextView
+       android:id="@+id/tv_cityname"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginBottom="300dp"
+       android:text="City name"
+       android:textSize="50dp"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintVertical_bias="0.3" />
+
+   <TextView
+       android:id="@+id/tv_ct"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="200dp"
+       android:layout_marginBottom="32dp"
+       android:text="current temperature"
+       android:textSize="30dp"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/tv_cityname" />
+
+   <TextView
+       android:id="@+id/tv_high"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="10dp"
+       android:layout_marginEnd="100dp"
+       android:text="high"
+       android:textSize="20dp"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/tv_ct" />
+
+   <TextView
+       android:id="@+id/tv_low"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginStart="100dp"
+       android:layout_marginTop="10dp"
+       android:layout_marginEnd="100dp"
+       android:text="low"
+       android:textSize="20dp"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.497"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/tv_ct" />
+
+   <TextView
+       android:id="@+id/tv_hudity"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="hudity"
+       android:textSize="20dp"
+       app:layout_constraintBaseline_toBaselineOf="@+id/tv_low"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.16"
+       app:layout_constraintStart_toEndOf="@+id/tv_low" />
+
+   <EditText
+       android:id="@+id/et_cn"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginStart="32dp"
+       android:layout_marginBottom="16dp"
+       android:ems="10"
+       android:inputType="textPersonName"
+       android:text="city name"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toStartOf="@+id/bt_click"
+       app:layout_constraintHorizontal_bias="0.0"
+       app:layout_constraintStart_toStartOf="parent" />
+
+   <ImageView
+       android:id="@+id/iv_weather"
+       android:layout_width="229dp"
+       android:layout_height="222dp"
+       android:layout_marginTop="32dp"
+       android:layout_marginBottom="16dp"
+       app:layout_constraintBottom_toTopOf="@+id/tv_ct"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.521"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/tv_cityname"
+        />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
